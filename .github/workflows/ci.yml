@@ -17,7 +17,7 @@ jobs:
           test -f index.html
           test -f style.css
           grep -q '<title>' index.html
-          grep -q 'FA23-BAI-059' index.html   # change to your real roll number
+          grep -q 'WRONG-ROLL-NUMBER' index.html   
 
       - name: Log in to Docker Hub
         if: github.ref == 'refs/heads/main'
