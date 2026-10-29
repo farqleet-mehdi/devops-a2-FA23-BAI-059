@@ -22,3 +22,4 @@ Open http://localhost:8080
 
 On every push to `main` and every pull request, the workflow checks the page and builds the image.
 The image is pushed to Docker Hub as `latest` only when the run is on `main`.
+Webhook test
