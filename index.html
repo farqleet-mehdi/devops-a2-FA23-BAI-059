@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syed Farqleet Mehdi| FA23-BAI-059 | DevOps Assignment 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Syed Farqleet Mehdi</h1>
+    <p class="roll">Roll number: FA23-BAI-059</p>
+    <p>DevOps for Cloud Computing, Assignment 2: Build, Containerize and Automate</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About me</h2>
+      <p>This page is my summary of Assignment 2 in DevOps for Cloud Computing: one small web page, taken through Git, GitHub, Docker and GitHub Actions.</p>
+    </section>
+
+    <section>
+      <h2>What I accomplished</h2>
+      <div class="cards">
+        <article>
+          <h3>A. Git and GitHub</h3>
+          <p>Public repository with a README, a .gitignore and 5+ meaningful commits. The extra section was added on the <code>feature-endpoint</code> branch, then merged through a pull request.</p>
+        </article>
+        <article>
+          <h3>B. Docker</h3>
+          <p>An nginx:alpine image that serves this page. I ran it locally on port 8080 and pushed it to Docker Hub as <code>devops-a2:manual</code>.</p>
+        </article>
+        <article>
+          <h3>C. GitHub Actions</h3>
+          <p>A workflow that checks this page, builds the image and pushes <code>latest</code> to Docker Hub only from main. Pull requests build but never push. Credentials come from GitHub secrets.</p>
+        </article>
+        <article>
+          <h3>D. Webhook</h3>
+          <p>A webhook sends push and pull request events to webhook.site, where I inspected the X-GitHub-Event header and the payload.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pipeline in one line</h2>
+      <p class="flow">commit &rarr; push to main &rarr; check page &rarr; build image &rarr; push to Docker Hub</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with plain HTML and CSS. Served by nginx inside Docker.</p>
+  </footer>
+</body>
+</html>
